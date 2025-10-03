@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="et">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Minu CV</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Comfortaa&display=swap');
+
+    body {
+      background: linear-gradient(135deg, #ffe3f1, #ffd1dc);
+      font-family: 'Comfortaa', cursive, Arial, sans-serif;
+      margin: 0; padding: 0;
+      color: #4b2e4f;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    header {
+      background-color: #f8b9d4;
+      padding: 40px 20px;
+      text-align: center;
+      border-bottom-left-radius: 50px;
+      border-bottom-right-radius: 50px;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 3rem;
+      letter-spacing: 3px;
+      text-shadow: 1px 1px 3px #a75c81;
+    }
+
+    main {
+      flex: 1;
+      padding: 40px 20px;
+      max-width: 700px;
+      margin: auto;
+      background: white;
+      border-radius: 25px;
+      box-shadow: 0 10px 20px rgba(183, 96, 144, 0.25);
+      color: #5a3e51;
+    }
+
+    /* Avalehe stiilid */
+    #home-view .card {
+      max-width: 350px;
+      margin: 40px auto;
+      text-align: center;
+      padding: 30px 40px;
+      border-radius: 25px;
+      box-shadow: 0 10px 20px rgba(183, 96, 144, 0.25);
+      transition: transform 0.3s ease;
+      cursor: pointer;
+      background: #fff;
+      color: #4b2e4f;
+    }
+
+    #home-view .card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 15px 25px rgba(183, 96, 144, 0.4);
+    }
+
+    #home-view .card h2 {
+      margin-top: 0;
+      font-size: 1.8rem;
+      color: #a94f83;
+      margin-bottom: 15px;
+    }
+
+    #home-view .card p {
+      font-size: 1.1rem;
+      margin-bottom: 25px;
+      color: #6a4a68;
+    }
+
+    /* Nupp */
+    .btn, .link-button {
+      background: #f48fb1;
+      border: none;
+      padding: 12px 25px;
+      border-radius: 20px;
+      font-weight: bold;
+      font-size: 1rem;
+      color: white;
+      cursor: pointer;
+      text-decoration: none;
+      box-shadow: 0 5px 15px rgba(244,143,177,0.5);
+      transition: background 0.3s ease;
+      display: inline-block;
+    }
+
+    .btn:hover, .link-button:hover {
+      background: #d46a87;
+      box-shadow: 0 8px 20px rgba(212,106,135,0.7);
+    }
+
+    /* Motivatsioonikiri vaade */
+    #motivation-view p {
+      font-size: 1.15rem;
+      margin-bottom: 20px;
+      max-width: 650px;
+      margin-left: auto;
+      margin-right: auto;
+      line-height: 1.6;
+    }
+
+    #motivation-view a.back-link {
+      display: inline-block;
+      margin-top: 20px;
+      color: #a94f83;
+      text-decoration: none;
+      font-weight: 600;
+      border: 2px solid #a94f83;
+      padding: 8px 15px;
+      border-radius: 15px;
+      transition: all 0.3s ease;
+      max-width: 650px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    #motivation-view a.back-link:hover {
+      background-color: #a94f83;
+      color: white;
+    }
+
+    /* Peida vaated */
+    .view {
+      display: none;
+    }
+
+    .active {
+      display: block;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9rem;
+      color: #7a5870;
+    }
+
+    @media (max-width: 720px) {
+      main {
+        padding: 25px 20px;
+        margin: 20px auto;
+        border-radius: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Minu CV</h1>
+</header>
+
+<main>
+  <!-- Avaleht -->
+  <section id="home-view" class="view active">
+    <div class="card" id="openMotivation">
+      <h2>Tere tulemast!</h2>
+      <p>Vaata minu <strong>motivatsioonikirja</strong> ja saa teada, miks just mina sobin!</p>
+      <button class="btn">Motivatsioonikiri</button>
+    </div>
+  </section>
+
+  <!-- Motivatsioonikiri -->
+  <section id="motivation-view" class="view">
+    <h2 style="text-align:center; color:#a94f83; margin-top:0; text-shadow: 1px 1px 2px #d9a3bd;">
+      Minu Motivatsioonikiri
+    </h2>
+
+    <p>Lugupeetud värbaja,</p>
+    
+    <p>
+      Olen väga põnevil võimalusest kandideerida teie ettevõttesse, sest usun, et minu oskused ja
+      kirg oma ala vastu sobivad ideaalselt teie meeskonda. Minu kogemused erinevates projektides,
+      sealhulgas <strong>front-end arendus</strong> ja <strong>meeskonnatöö</strong>, on mind ette valmistanud
+      edukalt panustama ning probleeme lahendama.
+    </p>
+    
+    <p>
+      Olen paindlik, õpihimuline ja sihikindel, mis on aidanud mul areneda ja saavutada seatud eesmärke
+      nii individuaalselt kui ka grupis. Samuti hindan väga head suhtlemist ja positiivset töökultuuri.
+    </p>
+    
+    <p>
+      Olen kindel, et minu pühendumus ja oskused muudavad mind väärtuslikuks lisanduseks teie tiimile ning ootan põnevusega võimalust oma panus anda.
+    </p>
+
+    <p>Parimate soovidega,<br><strong>Minu Nimi</strong></p>
+
+    <a href="#" class="back-link" id="backHome">← Tagasi avalehele</a>
+  </section>
+</main>
+
+<footer>
+  &copy; 2025 Minu Nimi | Kõik õigused kaitstud
+</footer>
+
+<script>
+  const openMotivationBtn = document.getElementById('openMotivation');
+  const backHomeLink = document.getElementById('backHome');
+  const homeView = document.getElementById('home-view');
+  const motivationView = document.getElementById('motivation-view');
+
+  openMotivationBtn.addEventListener('click', () => {
+    homeView.classList.remove('active');
+    motivationView.classList.add('active');
+    window.scrollTo(0,0);
+  });
+
+  backHomeLink.addEventListener('click', (e) => {
+    e.preventDefault();
+    motivationView.classList.remove('active');
+    homeView.classList.add('active');
+    window.scrollTo(0,0);
+  });
+</script>
+
+</body>
+</html>
